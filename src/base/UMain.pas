@@ -32,12 +32,13 @@ interface
 
 uses
   SysUtils,
-  SDL2;
+  SDL2,
+  UWebServer;
 
 var
   CheckMouseButton: boolean; // for checking mouse motion
   MAX_FPS: Byte; // 0 to 255 is enough
-
+  WebServer: TWebServer;
 
 procedure Main;
 procedure MainLoop;
@@ -239,6 +240,8 @@ begin
           [BadPlayer]));
       Display.CurrentScreen^.FadeTo( @ScreenOptionsMicrophones );
     end;
+
+    webserver := TWebServer.Create;
 
     Log.LogBenchmark('Main load', 1);
 

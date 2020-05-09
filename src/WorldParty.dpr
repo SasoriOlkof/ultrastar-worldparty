@@ -153,6 +153,13 @@ uses
   Windows,
   {$ENDIF}
 
+  synacode in 'lib\synapse\synacode.pas',
+  synaip in 'lib\synapse\synaip.pas',
+  synafpc in 'lib\synapse\synafpc.pas',
+  synsock in 'lib\synapse\synsock.pas',
+  blcksock in 'lib\synapse\blcksock.pas',
+  Synautil in 'lib\synapse\synautil.pas',
+
   //------------------------------
   //Includes - Lua Support
   //------------------------------
@@ -222,6 +229,7 @@ uses
   UPathUtils        in 'base\UPathUtils.pas',
   UNote             in 'base\UNote.pas',
   UBeatTimer        in 'base\UBeatTimer.pas',
+  UWebServer        in 'base\UWebServer.pas',
 
   TextGL            in 'base\TextGL.pas',
   UUnicodeUtils     in 'base\UUnicodeUtils.pas',
